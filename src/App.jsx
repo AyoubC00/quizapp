@@ -1,10 +1,12 @@
+import { useState } from "react"
 import Timer from "./components/Timer/Timer"
 
 function App() {
-
+  let [timeout, setTimeout] = useState(false);
   return (
     <>
-      <Timer hours={ 3 } minutes={ 0 } seconds={ 0 }/>
+      <Timer hours={ 0 } minutes={ 0 } seconds={ 5 } timeout={ timeout } setTimeout={ setTimeout }/>
+      
     </>
   )
 }

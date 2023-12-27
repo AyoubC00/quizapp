@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import timerStyle from "./style.module.css"
 
-const Timer = (props) =>
+const Timer = ({ timeout, setTimeout, ...props }) =>
 {
     let [minutes, setMinutes] = useState(props.minutes);
     let [seconds, setSeconds] = useState(props.seconds);
     let [hours, setHours] = useState(props.hours);
-    let [timeout, setTimeout] = useState(false);
+    
 
     const updateTimer = () =>
     {
