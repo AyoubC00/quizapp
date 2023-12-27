@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Roboto Flex";
+    src: url("../fonts/Roboto_Flex/RobotoFlex-VariableFont_GRAD\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Mono";
+    src: url("../fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf")
+}
